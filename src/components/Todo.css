@@ -1,0 +1,35 @@
+.todo-item {
+    border-left: 2rem solid transparent;
+    padding-left: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.todo-item.undone {
+    border-color: rgb(245, 76, 76);
+}
+
+.todo-item.done {
+    border-color: rgb(41, 228, 150);
+}
+
+.importance {
+    border-left: 5px solid rgb(255, 208, 0);
+    padding-left: 0.5rem;
+    animation: fade 0.2s ease-in-out;
+}
+
+.todo-item {
+    transition: all 0.2s ease-in-out;
+    animation: fade 0.2s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
